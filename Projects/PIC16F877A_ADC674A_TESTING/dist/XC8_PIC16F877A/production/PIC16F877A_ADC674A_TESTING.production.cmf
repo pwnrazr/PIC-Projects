@@ -1,0 +1,478 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+cinit CODE 0 15 15 10 2
+text1 CODE 0 29F 29F 38 2
+text2 CODE 0 381 381 7 2
+text3 CODE 0 378 378 9 2
+text4 CODE 0 33E 33E D 2
+text5 CODE 0 193 193 CE 2
+text6 CODE 0 34B 34B C 2
+text7 CODE 0 2D7 2D7 35 2
+text8 CODE 0 357 357 B 2
+text9 CODE 0 362 362 B 2
+text10 CODE 0 388 388 6 2
+text11 CODE 0 30C 30C 32 2
+text12 CODE 0 261 261 3E 2
+text13 CODE 0 38E 38E 1 2
+text14 CODE 0 36D 36D B 2
+maintext CODE 0 25 25 16E 2
+cstackCOMMON COMMON 1 70 70 A 1
+cstackBANK0 BANK0 1 20 20 16 1
+intentry CODE 0 4 4 E 2
+bssBANK0 BANK0 1 36 36 A 1
+$C:\Users\Amirz\AppData\Local\Temp\sd0c.obj
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 12 12 3 2
+config CONFIG 0 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 40-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 40-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 38F-1FFF 2
+ENTRY 3-3 2
+ENTRY 38F-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-3 2
+CODE 38F-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7A-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 38F-1FFF 2
+STRING 3-3 2
+STRING 38F-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+15 cinit CODE >839:C:\Users\Amirz\AppData\Local\Temp\sd0c.
+15 cinit CODE >842:C:\Users\Amirz\AppData\Local\Temp\sd0c.
+15 cinit CODE >853:C:\Users\Amirz\AppData\Local\Temp\sd0c.
+16 cinit CODE >854:C:\Users\Amirz\AppData\Local\Temp\sd0c.
+17 cinit CODE >855:C:\Users\Amirz\AppData\Local\Temp\sd0c.
+18 cinit CODE >856:C:\Users\Amirz\AppData\Local\Temp\sd0c.
+19 cinit CODE >857:C:\Users\Amirz\AppData\Local\Temp\sd0c.
+1A cinit CODE >858:C:\Users\Amirz\AppData\Local\Temp\sd0c.
+1B cinit CODE >859:C:\Users\Amirz\AppData\Local\Temp\sd0c.
+1C cinit CODE >860:C:\Users\Amirz\AppData\Local\Temp\sd0c.
+1D cinit CODE >861:C:\Users\Amirz\AppData\Local\Temp\sd0c.
+1E cinit CODE >862:C:\Users\Amirz\AppData\Local\Temp\sd0c.
+1F cinit CODE >863:C:\Users\Amirz\AppData\Local\Temp\sd0c.
+20 cinit CODE >864:C:\Users\Amirz\AppData\Local\Temp\sd0c.
+21 cinit CODE >870:C:\Users\Amirz\AppData\Local\Temp\sd0c.
+21 cinit CODE >872:C:\Users\Amirz\AppData\Local\Temp\sd0c.
+22 cinit CODE >873:C:\Users\Amirz\AppData\Local\Temp\sd0c.
+4 intentry CODE >23:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\interrupts.c
+36D text14 CODE >23:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\interrupts.c
+36D text14 CODE >50:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\interrupts.c
+38E text13 CODE >22:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\user.c
+38E text13 CODE >31:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\user.c
+261 text12 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+261 text12 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+265 text12 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+269 text12 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+26B text12 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+26D text12 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+274 text12 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+278 text12 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+279 text12 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+280 text12 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+288 text12 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+28E text12 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+28F text12 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+296 text12 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+29A text12 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwdiv.c
+30C text11 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+30C text11 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+310 text11 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+312 text11 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+314 text11 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+31B text11 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+31F text11 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+320 text11 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+328 text11 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+32E text11 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+335 text11 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+339 text11 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\lwmod.c
+388 text10 CODE >380:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+389 text10 CODE >382:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+38D text10 CODE >383:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+362 text9 CODE >340:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+363 text9 CODE >342:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+36C text9 CODE >343:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+357 text8 CODE >360:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+358 text8 CODE >362:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+361 text8 CODE >363:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+2D7 text7 CODE >308:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+2D8 text7 CODE >311:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+2DE text7 CODE >312:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+2E4 text7 CODE >315:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+2EA text7 CODE >316:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+2F2 text7 CODE >317:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+2F8 text7 CODE >318:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+301 text7 CODE >321:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+307 text7 CODE >322:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+30B text7 CODE >323:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+34B text6 CODE >220:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+34E text6 CODE >223:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+356 text6 CODE >224:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+193 text5 CODE >274:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+196 text5 CODE >276:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+1AB text5 CODE >278:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+1BE text5 CODE >279:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+1D1 text5 CODE >280:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+1E4 text5 CODE >281:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+1F7 text5 CODE >282:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+20A text5 CODE >283:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+21D text5 CODE >284:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+230 text5 CODE >285:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+243 text5 CODE >287:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+24B text5 CODE >288:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+24E text5 CODE >290:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+25C text5 CODE >288:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+33E text4 CODE >199:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+341 text4 CODE >202:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+34A text4 CODE >203:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+378 text3 CODE >157:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+378 text3 CODE >160:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+380 text3 CODE >161:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+381 text2 CODE >136:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+381 text2 CODE >139:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+387 text2 CODE >140:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+29F text1 CODE >100:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+29F text1 CODE >104:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+2A5 text1 CODE >105:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+2AF text1 CODE >108:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+2BB text1 CODE >112:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+2C7 text1 CODE >115:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+2D3 text1 CODE >118:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+2D6 text1 CODE >119:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\lcd.c
+25 maintext CODE >19:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+25 maintext CODE >22:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+2A maintext CODE >24:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+2D maintext CODE >25:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+2E maintext CODE >26:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+2F maintext CODE >27:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+30 maintext CODE >28:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+31 maintext CODE >30:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+35 maintext CODE >31:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+37 maintext CODE >32:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+39 maintext CODE >33:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+3A maintext CODE >34:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+3C maintext CODE >36:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+41 maintext CODE >58:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+46 maintext CODE >59:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+5A maintext CODE >62:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+60 maintext CODE >63:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+74 maintext CODE >64:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+7A maintext CODE >65:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+8E maintext CODE >66:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+94 maintext CODE >67:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+A8 maintext CODE >68:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+AE maintext CODE >69:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+C2 maintext CODE >70:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+C8 maintext CODE >71:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+DC maintext CODE >72:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+E2 maintext CODE >73:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+F6 maintext CODE >74:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+FC maintext CODE >75:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+110 maintext CODE >76:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+116 maintext CODE >77:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+12A maintext CODE >78:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+130 maintext CODE >79:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+144 maintext CODE >80:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+14A maintext CODE >81:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+15E maintext CODE >82:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+164 maintext CODE >83:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+178 maintext CODE >84:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+17E maintext CODE >85:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+192 maintext CODE >56:D:\Relocate\Documents\PIC Microcontroller\Projects\PIC16F877A_ADC674A_TESTING\main.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+___lwmod@counter 79 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__Hspace_0 2008 0 ABS 0 - -
+__Hspace_1 7A 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__size_of_lcd_bcd 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__size_of_set_lcd_data 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_set_lcd_e 6C4 0 CODE 0 text9 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack C:\Users\Amirz\AppData\Local\Temp\sd0c.obj
+_main 4A 0 CODE 0 maintext dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+btemp 7E 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+start 24 0 CODE 0 init C:\Users\Amirz\AppData\Local\Temp\sd0c.obj
+lcd_bcd@F1134 36 0 BANK0 1 bssBANK0 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+lcd_bcd@ui_number 23 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__size_of_main 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__size_of___lwdiv 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__size_of___lwmod 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+lcd_putchar@c_data 20 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__end_of_set_lcd_data 71C 0 CODE 0 text10 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__end_of_lcd_initialize 5AE 0 CODE 0 text1 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+send_lcd_data@b_rs 78 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+lcd_bcd@ui_decimal 29 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__end_of_lcd_clear 710 0 CODE 0 text2 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__size_of_lcd_clear 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\Amirz\AppData\Local\Temp\sd0c.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\Amirz\AppData\Local\Temp\sd0c.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\Amirz\AppData\Local\Temp\sd0c.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\Amirz\AppData\Local\Temp\sd0c.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\Amirz\AppData\Local\Temp\sd0c.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\Amirz\AppData\Local\Temp\sd0c.obj
+_InitApp 71C 0 CODE 0 text13 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+wtemp0 7E 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__Hfunctab 0 0 ENTRY 0 functab -
+__Hclrtext 0 0 ABS 0 clrtext -
+_lcd_clear 702 0 CODE 0 text2 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+set_lcd_data@uc_data 74 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__end_of_lcd_bcd 4C2 0 CODE 0 text5 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+___lwmod@divisor 74 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__end_of___lwdiv 53E 0 CODE 0 text12 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__end_of___lwmod 67C 0 CODE 0 text11 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__size_of_set_lcd_rs 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+lcd_bcd@uc_digit 33 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_lcd_putchar 696 0 CODE 0 text6 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+___lwdiv@quotient 20 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+___lwmod@dividend 76 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+start_initialization 2A 0 CODE 0 cinit dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Amirz\AppData\Local\Temp\sd0c.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 4A 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+___lwdiv@counter 22 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__size_of_lcd_goto 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__size_of_lcd_home 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 0 config -
+lcd_goto@uc_position 20 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 2A 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+set_lcd_e@b_output 74 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 24 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 24 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_RA0 28 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_RA1 29 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_RA2 2A 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_RA3 2B 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_RA4 2C 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_RA5 2D 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_RB4 34 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_RB5 35 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_RC2 3A 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_RC3 3B 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_RC4 3C 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_RC5 3D 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_RC6 3E 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_RC7 3F 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_RE2 4A 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__S0 2008 0 ABS 0 - -
+__S1 7A 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_isr 6DA 0 CODE 0 text14 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_send_lcd_data 5AE 0 CODE 0 text7 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+send_lcd_data@uc_data 75 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+saved_w 7E 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__size_of_lcd_initialize 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__end_of_isr 6F0 0 CODE 0 text14 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_lcd_goto 67C 0 CODE 0 text4 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_lcd_home 6F0 0 CODE 0 text3 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__Lintentry 8 0 CODE 0 intentry -
+_lcd_bcd 326 0 CODE 0 text5 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Amirz\AppData\Local\Temp\sd0c.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__end_of_lcd_goto 696 0 CODE 0 text4 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__end_of_lcd_home 702 0 CODE 0 text3 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__size_of_InitApp 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__ptext10 710 0 CODE 0 text10 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__ptext11 618 0 CODE 0 text11 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__ptext12 4C2 0 CODE 0 text12 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__ptext13 71C 0 CODE 0 text13 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__ptext14 6DA 0 CODE 0 text14 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+___lwdiv 4C2 0 CODE 0 text12 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+___lwmod 618 0 CODE 0 text11 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__pmaintext 4A 0 CODE 0 maintext dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 400E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+___lwdiv@divisor 74 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+stackhi 0 0 ABS 0 - C:\Users\Amirz\AppData\Local\Temp\sd0c.obj
+stacklo 0 0 ABS 0 - C:\Users\Amirz\AppData\Local\Temp\sd0c.obj
+__end_of_lcd_putchar 6AE 0 CODE 0 text6 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__size_of_send_lcd_data 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 24 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 42 0 CODE 0 cinit dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__Hintentry 24 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___lwdiv@dividend 76 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+?___lwdiv 74 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+?___lwmod 74 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__end_of_send_lcd_data 618 0 CODE 0 text7 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__ptext1 53E 0 CODE 0 text1 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__ptext2 702 0 CODE 0 text2 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__ptext3 6F0 0 CODE 0 text3 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__ptext4 67C 0 CODE 0 text4 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__ptext5 326 0 CODE 0 text5 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__ptext6 696 0 CODE 0 text6 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__ptext7 5AE 0 CODE 0 text7 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__ptext8 6AE 0 CODE 0 text8 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__ptext9 6C4 0 CODE 0 text9 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__end_of_InitApp 71E 0 CODE 0 text13 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_set_lcd_rs 6AE 0 CODE 0 text8 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__CFG_FOSC$HS 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__end_of__initialization 42 0 CODE 0 cinit dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+__CFG_PWRTE$ON 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__Hend_init 2A 0 CODE 0 end_init -
+__end_of_main 326 0 CODE 0 maintext dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_PORTA 5 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_PORTB 6 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_PORTC 7 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_PORTD 8 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_PORTE 9 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_TRISA 85 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_TRISB 86 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_TRISC 87 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_TRISD 88 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_TRISE 89 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_set_lcd_data 710 0 CODE 0 text10 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__pintentry 8 0 CODE 0 intentry dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__size_of_isr 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__end_of_set_lcd_rs 6C4 0 CODE 0 text8 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__initialization 2A 0 CODE 0 cinit dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__size_of_lcd_putchar 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__pbssBANK0 36 0 BANK0 1 bssBANK0 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__end_of_set_lcd_e 6DA 0 CODE 0 text9 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+_lcd_initialize 53E 0 CODE 0 text1 dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+__size_of_set_lcd_e 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+set_lcd_rs@b_output 74 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_ADC674A_TESTING.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cstackCOMMON 1 70 70 A 1
+cstackBANK0 1 20 20 20 1
+intentry 0 4 8 38B 2
+reset_vec 0 0 0 3 2
+config 0 2007 400E 1 2

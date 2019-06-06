@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/XC8_PIC16F877A/production\PIC16F877A_Real_Time_Attempt.X.production.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>8192</length>
+      <used>751</used>
+      <free>7441</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>368</length>
+      <used>43</used>
+      <free>325</free>
+    </memory>
+  </executable>
+</project>

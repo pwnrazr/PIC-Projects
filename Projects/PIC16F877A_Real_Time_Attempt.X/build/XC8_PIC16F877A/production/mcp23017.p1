@@ -1,0 +1,106 @@
+Version 3.2 HI-TECH Software Intermediate Code
+"13 i2c.h
+[v _I2C_Master_Init `(v ~T0 @X0 0 ef1`Cul ]
+"17
+[v _I2C_Master_Start `(v ~T0 @X0 0 ef ]
+"23
+[v _I2C_Master_Write `(v ~T0 @X0 0 ef1`ui ]
+"21
+[v _I2C_Master_Stop `(v ~T0 @X0 0 ef ]
+[; ;i2c.h: 13: extern void I2C_Master_Init(const unsigned long c);
+[; ;i2c.h: 15: extern void I2C_Master_Wait();
+[; ;i2c.h: 17: extern void I2C_Master_Start();
+[; ;i2c.h: 19: extern void I2C_Master_RepeatedStart();
+[; ;i2c.h: 21: extern void I2C_Master_Stop();
+[; ;i2c.h: 23: extern void I2C_Master_Write(unsigned d);
+[; ;i2c.h: 25: extern unsigned short I2C_Master_Read(unsigned short a);
+"3 mcp23017.c
+[v _mcp_init `(v ~T0 @X0 1 ef ]
+"4
+{
+[; ;mcp23017.c: 3: void mcp_init()
+[; ;mcp23017.c: 4: {
+[e :U _mcp_init ]
+[f ]
+[; ;mcp23017.c: 5: I2C_Master_Init(400000);
+"5
+[e ( _I2C_Master_Init (1 -> -> 400000 `l `ul ]
+[; ;mcp23017.c: 8: I2C_Master_Start();
+"8
+[e ( _I2C_Master_Start ..  ]
+[; ;mcp23017.c: 9: I2C_Master_Write(0b01000000);
+"9
+[e ( _I2C_Master_Write (1 -> -> 64 `i `ui ]
+[; ;mcp23017.c: 10: I2C_Master_Write(0x0A);
+"10
+[e ( _I2C_Master_Write (1 -> -> 10 `i `ui ]
+[; ;mcp23017.c: 11: I2C_Master_Write(0b11101000);
+"11
+[e ( _I2C_Master_Write (1 -> -> 232 `i `ui ]
+[; ;mcp23017.c: 12: I2C_Master_Stop();
+"12
+[e ( _I2C_Master_Stop ..  ]
+[; ;mcp23017.c: 15: }
+"15
+[e :UE 1 ]
+}
+"17
+[v _extGPIOAdir `(v ~T0 @X0 1 ef1`us ]
+"18
+{
+[; ;mcp23017.c: 17: void extGPIOAdir(unsigned short a)
+[; ;mcp23017.c: 18: {
+[e :U _extGPIOAdir ]
+"17
+[v _a `us ~T0 @X0 1 r1 ]
+"18
+[f ]
+[; ;mcp23017.c: 19: I2C_Master_Start();
+"19
+[e ( _I2C_Master_Start ..  ]
+[; ;mcp23017.c: 20: I2C_Master_Write(0b01000000);
+"20
+[e ( _I2C_Master_Write (1 -> -> 64 `i `ui ]
+[; ;mcp23017.c: 21: I2C_Master_Write(0x00);
+"21
+[e ( _I2C_Master_Write (1 -> -> 0 `i `ui ]
+[; ;mcp23017.c: 22: I2C_Master_Write(a);
+"22
+[e ( _I2C_Master_Write (1 -> _a `ui ]
+[; ;mcp23017.c: 23: I2C_Master_Stop();
+"23
+[e ( _I2C_Master_Stop ..  ]
+[; ;mcp23017.c: 24: }
+"24
+[e :UE 2 ]
+}
+"27
+[v _extGPIOA `(v ~T0 @X0 1 ef1`us ]
+"28
+{
+[; ;mcp23017.c: 27: void extGPIOA(unsigned short a)
+[; ;mcp23017.c: 28: {
+[e :U _extGPIOA ]
+"27
+[v _a `us ~T0 @X0 1 r1 ]
+"28
+[f ]
+[; ;mcp23017.c: 29: I2C_Master_Start();
+"29
+[e ( _I2C_Master_Start ..  ]
+[; ;mcp23017.c: 30: I2C_Master_Write(0b01000000);
+"30
+[e ( _I2C_Master_Write (1 -> -> 64 `i `ui ]
+[; ;mcp23017.c: 31: I2C_Master_Write(0x09);
+"31
+[e ( _I2C_Master_Write (1 -> -> 9 `i `ui ]
+[; ;mcp23017.c: 32: I2C_Master_Write(a);
+"32
+[e ( _I2C_Master_Write (1 -> _a `ui ]
+[; ;mcp23017.c: 33: I2C_Master_Stop();
+"33
+[e ( _I2C_Master_Stop ..  ]
+[; ;mcp23017.c: 34: }
+"34
+[e :UE 3 ]
+}

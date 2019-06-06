@@ -1,0 +1,474 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\Amirz\AppData\Local\Temp\s4eo.obj
+reset_vec CODE 0 0 0 3 2
+end_init CODE 0 12 12 3 2
+config CONFIG 0 2007 2007 1 2
+$dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+cinit CODE 0 15 15 10 2
+text1 CODE 0 253 253 1C 2
+text2 CODE 0 2AC 2AC 8 2
+text3 CODE 0 25 25 EB 2
+text4 CODE 0 110 110 8F 2
+text5 CODE 0 1E6 1E6 38 2
+text6 CODE 0 2B4 2B4 7 2
+text7 CODE 0 21E 21E 35 2
+text8 CODE 0 28B 28B B 2
+text9 CODE 0 296 296 B 2
+text10 CODE 0 2BB 2BB 6 2
+text11 CODE 0 26F 26F F 2
+text12 CODE 0 2C1 2C1 1 2
+text13 CODE 0 2A1 2A1 B 2
+maintext CODE 0 19F 19F 47 2
+cstackCOMMON COMMON 1 70 70 9 1
+cstackBANK0 BANK0 1 20 20 21 1
+intentry CODE 0 4 4 E 2
+bssBANK0 BANK0 1 41 41 A 1
+strings STRING 0 27E 27E D 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 4B-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 4B-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-3 2
+CONST 2C2-1FFF 2
+ENTRY 3-3 2
+ENTRY 2C2-1FFF 2
+IDLOC 2000-2003 2
+STACK 110-16F 1
+CODE 3-3 2
+CODE 2C2-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 79-7D 1
+EEDATA 2100-21FF 2
+STRCODE 3-3 2
+STRCODE 2C2-1FFF 2
+STRING 3-3 2
+STRING 2C2-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+15 cinit CODE >1133:C:\Users\Amirz\AppData\Local\Temp\s4eo.
+15 cinit CODE >1136:C:\Users\Amirz\AppData\Local\Temp\s4eo.
+15 cinit CODE >1147:C:\Users\Amirz\AppData\Local\Temp\s4eo.
+16 cinit CODE >1148:C:\Users\Amirz\AppData\Local\Temp\s4eo.
+17 cinit CODE >1149:C:\Users\Amirz\AppData\Local\Temp\s4eo.
+18 cinit CODE >1150:C:\Users\Amirz\AppData\Local\Temp\s4eo.
+19 cinit CODE >1151:C:\Users\Amirz\AppData\Local\Temp\s4eo.
+1A cinit CODE >1152:C:\Users\Amirz\AppData\Local\Temp\s4eo.
+1B cinit CODE >1153:C:\Users\Amirz\AppData\Local\Temp\s4eo.
+1C cinit CODE >1154:C:\Users\Amirz\AppData\Local\Temp\s4eo.
+1D cinit CODE >1155:C:\Users\Amirz\AppData\Local\Temp\s4eo.
+1E cinit CODE >1156:C:\Users\Amirz\AppData\Local\Temp\s4eo.
+1F cinit CODE >1157:C:\Users\Amirz\AppData\Local\Temp\s4eo.
+20 cinit CODE >1158:C:\Users\Amirz\AppData\Local\Temp\s4eo.
+21 cinit CODE >1164:C:\Users\Amirz\AppData\Local\Temp\s4eo.
+21 cinit CODE >1166:C:\Users\Amirz\AppData\Local\Temp\s4eo.
+22 cinit CODE >1167:C:\Users\Amirz\AppData\Local\Temp\s4eo.
+4 intentry CODE >23:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\interrupts.c
+2A1 text13 CODE >23:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\interrupts.c
+2A1 text13 CODE >50:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\interrupts.c
+2C1 text12 CODE >22:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\user.c
+2C1 text12 CODE >31:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\user.c
+26F text11 CODE >28:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\adc.c
+26F text11 CODE >31:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\adc.c
+272 text11 CODE >32:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\adc.c
+273 text11 CODE >39:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\adc.c
+276 text11 CODE >41:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\adc.c
+277 text11 CODE >42:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\adc.c
+278 text11 CODE >43:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\adc.c
+279 text11 CODE >44:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\adc.c
+27A text11 CODE >47:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\adc.c
+27D text11 CODE >48:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\adc.c
+2BB text10 CODE >380:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+2BC text10 CODE >382:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+2C0 text10 CODE >383:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+296 text9 CODE >340:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+297 text9 CODE >342:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+2A0 text9 CODE >343:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+28B text8 CODE >360:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+28C text8 CODE >362:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+295 text8 CODE >363:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+21E text7 CODE >308:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+21F text7 CODE >311:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+225 text7 CODE >312:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+22B text7 CODE >315:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+231 text7 CODE >316:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+239 text7 CODE >317:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+23F text7 CODE >318:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+248 text7 CODE >321:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+24E text7 CODE >322:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+252 text7 CODE >323:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+2B4 text6 CODE >136:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+2B4 text6 CODE >139:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+2BA text6 CODE >140:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+1E6 text5 CODE >100:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+1E6 text5 CODE >104:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+1EC text5 CODE >105:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+1F6 text5 CODE >108:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+202 text5 CODE >112:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+20E text5 CODE >115:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+21A text5 CODE >118:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+21D text5 CODE >119:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\lcd.c
+110 text4 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+110 text4 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+113 text4 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+115 text4 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+120 text4 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+122 text4 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+122 text4 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+124 text4 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+12F text4 CODE >21:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+133 text4 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+13B text4 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+141 text4 CODE >25:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+143 text4 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+145 text4 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+14E text4 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+152 text4 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+153 text4 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+15C text4 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+16C text4 CODE >33:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+17A text4 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+17B text4 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+184 text4 CODE >37:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+188 text4 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+18B text4 CODE >40:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+196 text4 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\aldiv.c
+25 text3 CODE >28:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+25 text3 CODE >31:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+89 text3 CODE >32:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+90 text3 CODE >34:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+F2 text3 CODE >35:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+F5 text3 CODE >37:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+FC text3 CODE >39:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+FF text3 CODE >41:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+101 text3 CODE >42:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+102 text3 CODE >43:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+105 text3 CODE >44:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+108 text3 CODE >45:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+109 text3 CODE >46:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+10C text3 CODE >47:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+10F text3 CODE >48:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+2AC text2 CODE >69:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+2AD text2 CODE >72:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+2B1 text2 CODE >75:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+2B3 text2 CODE >76:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+253 text1 CODE >127:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+254 text1 CODE >129:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+25E text1 CODE >130:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+26E text1 CODE >129:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\uart.c
+19F maintext CODE >21:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\main.c
+19F maintext CODE >24:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\main.c
+1A4 maintext CODE >26:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\main.c
+1A7 maintext CODE >27:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\main.c
+1A8 maintext CODE >28:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\main.c
+1A9 maintext CODE >29:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\main.c
+1AA maintext CODE >31:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\main.c
+1AE maintext CODE >32:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\main.c
+1B0 maintext CODE >33:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\main.c
+1B1 maintext CODE >34:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\main.c
+1B2 maintext CODE >36:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\main.c
+1B7 maintext CODE >37:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\main.c
+1BC maintext CODE >38:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\main.c
+1CB maintext CODE >42:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\main.c
+1D1 maintext CODE >43:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\main.c
+1D7 maintext CODE >44:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\main.c
+1E5 maintext CODE >40:D:\Relocate\Documents\!PIC Microcontroller\Projects\PIC16F877A_Serial\main.c
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__Hspace_0 2008 0 ABS 0 - -
+__Hspace_1 79 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__size_of_set_lcd_data 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_set_lcd_e 52C 0 CODE 0 text9 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__Hstrings 0 0 ABS 0 strings -
+_ADFM 4FF 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_ADON F8 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_BRGH 4C2 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_CHS0 FB 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_CHS1 FC 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_CHS2 FD 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_CREN C4 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_OERR C1 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_RCIE 465 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_RCIF 65 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_SPEN C7 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_SYNC 4C4 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_TXEN 4C5 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_TXIF 64 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+___sp 0 0 STACK 2 stack C:\Users\Amirz\AppData\Local\Temp\s4eo.obj
+_main 33E 0 CODE 0 maintext dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+btemp 7E 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+start 24 0 CODE 0 init C:\Users\Amirz\AppData\Local\Temp\s4eo.obj
+lcd_bcd@F1134 41 0 BANK0 1 bssBANK0 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__size_of___aldiv 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__size_of_main 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__end_of_set_lcd_data 582 0 CODE 0 text10 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__end_of_lcd_initialize 43C 0 CODE 0 text5 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+send_lcd_data@b_rs 78 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__size_of_adc_initialize 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+__end_of_lcd_clear 576 0 CODE 0 text6 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__size_of_lcd_clear 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\Amirz\AppData\Local\Temp\s4eo.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\Amirz\AppData\Local\Temp\s4eo.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\Amirz\AppData\Local\Temp\s4eo.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\Amirz\AppData\Local\Temp\s4eo.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\Amirz\AppData\Local\Temp\s4eo.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\Amirz\AppData\Local\Temp\s4eo.obj
+_InitApp 582 0 CODE 0 text12 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+___aldiv@divisor 20 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+wtemp0 7E 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__Hfunctab 0 0 ENTRY 0 functab -
+___aldiv@sign 29 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+uart_init@baudrate 2E 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_lcd_clear 568 0 CODE 0 text6 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_ADRESH 1E 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_ADRESL 9E 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+set_lcd_data@uc_data 74 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__size_of_uart_putstr 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+uart_send@uc_data 74 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+__end_of___aldiv 33E 0 CODE 0 text4 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__size_of_set_lcd_rs 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+start_initialization 2A 0 CODE 0 cinit dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+___aldiv@quotient 2A 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_GO_nDONE FA 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__pcstackBANK0 20 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_TRISC6 43E 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_TRISC7 43F 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\Amirz\AppData\Local\Temp\s4eo.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 4A 0 CODE 0 cinit -
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__stringbase 506 0 STRING 0 strings dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 0 config -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit 2A 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+set_lcd_e@b_output 74 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 24 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 24 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_RB4 34 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_RB5 35 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__S0 2008 0 ABS 0 - -
+__S1 79 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+_isr 542 0 CODE 0 text13 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_send_lcd_data 43C 0 CODE 0 text7 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+send_lcd_data@uc_data 75 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+saved_w 7E 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__size_of_lcd_initialize 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_uart_putstr 4A6 0 CODE 0 text1 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_adc_initialize 4DE 0 CODE 0 text11 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__end_of_isr 558 0 CODE 0 text13 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__Lintentry 8 0 CODE 0 intentry -
+__stringtab 4FC 0 STRING 0 strings dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\Amirz\AppData\Local\Temp\s4eo.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+__size_of_InitApp 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__ptext10 576 0 CODE 0 text10 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__ptext11 4DE 0 CODE 0 text11 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__ptext12 582 0 CODE 0 text12 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__ptext13 542 0 CODE 0 text13 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+___aldiv 220 0 CODE 0 text4 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__pmaintext 33E 0 CODE 0 maintext dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 400E 0 CONFIG 0 config -
+__CFG_CP$OFF 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__CFG_WDTE$OFF 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__end_of_adc_initialize 4FC 0 CODE 0 text11 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+stackhi 0 0 ABS 0 - C:\Users\Amirz\AppData\Local\Temp\s4eo.obj
+stacklo 0 0 ABS 0 - C:\Users\Amirz\AppData\Local\Temp\s4eo.obj
+__size_of_send_lcd_data 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__end_of__stringtab 508 0 STRING 0 strings dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__CFG_LVP$OFF 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+uart_putstr@st_pt 76 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 24 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization 42 0 CODE 0 cinit dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__Hintentry 24 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+?___aldiv 20 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__Hreset_vec 6 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+__end_of_send_lcd_data 4A6 0 CODE 0 text7 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__end_of_uart_init 220 0 CODE 0 text3 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__end_of_uart_send 568 0 CODE 0 text2 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__ptext1 4A6 0 CODE 0 text1 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__ptext2 558 0 CODE 0 text2 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__ptext3 4A 0 CODE 0 text3 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__ptext4 220 0 CODE 0 text4 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__ptext5 3CC 0 CODE 0 text5 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__ptext6 568 0 CODE 0 text6 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__ptext7 43C 0 CODE 0 text7 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__ptext8 516 0 CODE 0 text8 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__ptext9 52C 0 CODE 0 text9 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__end_of_InitApp 584 0 CODE 0 text12 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__size_of_uart_init 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__size_of_uart_send 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+___aldiv@dividend 24 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+_set_lcd_rs 516 0 CODE 0 text8 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__CFG_FOSC$HS 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_uart_init 4A 0 CODE 0 text3 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_uart_send 558 0 CODE 0 text2 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__end_of__initialization 42 0 CODE 0 cinit dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+__CFG_PWRTE$ON 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+uart_init@x 75 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__Hend_init 2A 0 CODE 0 end_init -
+___aldiv@counter 28 0 BANK0 1 cstackBANK0 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__end_of_main 3CC 0 CODE 0 maintext dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_ADCS0 FE 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_ADCS1 FF 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_PCFG0 4F8 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_PCFG1 4F9 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_PCFG2 4FA 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_PCFG3 4FB 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_PORTA 5 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_PORTB 6 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_PORTC 7 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_PORTD 8 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_RCREG 1A 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_SPBRG 99 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_TRISA 85 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_TRISB 86 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_TRISC 87 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_TRISD 88 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_TXREG 19 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_set_lcd_data 576 0 CODE 0 text10 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__CFG_CPD$OFF 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__pintentry 8 0 CODE 0 intentry dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__end_of_uart_putstr 4DE 0 CODE 0 text1 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__size_of_isr 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__end_of_set_lcd_rs 52C 0 CODE 0 text8 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__initialization 2A 0 CODE 0 cinit dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__pbssBANK0 41 0 BANK0 1 bssBANK0 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__CFG_WRT$OFF 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__end_of_set_lcd_e 542 0 CODE 0 text9 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__pstrings 4FC 0 STRING 0 strings dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+_lcd_initialize 3CC 0 CODE 0 text5 dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+__size_of_set_lcd_e 0 0 ABS 0 - dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+set_lcd_rs@b_output 74 0 COMMON 1 cstackCOMMON dist/XC8_PIC16F877A/production\PIC16F877A_Serial.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text8 0 28B 516 37 2
+cstackCOMMON 1 70 70 9 1
+cstackBANK0 1 20 20 2B 1
+intentry 0 4 8 27A 2
+reset_vec 0 0 0 3 2
+strings 0 27E 4FC D 2
+config 0 2007 400E 1 2

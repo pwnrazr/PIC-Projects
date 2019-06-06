@@ -1,0 +1,51 @@
+
+# 1 "mcp23017.c"
+
+# 13 "i2c.h"
+extern void I2C_Master_Init(const unsigned long c);
+
+extern void I2C_Master_Wait();
+
+extern void I2C_Master_Start();
+
+extern void I2C_Master_RepeatedStart();
+
+extern void I2C_Master_Stop();
+
+extern void I2C_Master_Write(unsigned d);
+
+extern unsigned short I2C_Master_Read(unsigned short a);
+
+# 3 "mcp23017.c"
+void mcp_init()
+{
+I2C_Master_Init(400000);
+
+
+I2C_Master_Start();
+I2C_Master_Write(0b01000000);
+I2C_Master_Write(0x0A);
+I2C_Master_Write(0b11101000);
+I2C_Master_Stop();
+
+
+}
+
+void extGPIOAdir(unsigned short a)
+{
+I2C_Master_Start();
+I2C_Master_Write(0b01000000);
+I2C_Master_Write(0x00);
+I2C_Master_Write(a);
+I2C_Master_Stop();
+}
+
+
+void extGPIOA(unsigned short a)
+{
+I2C_Master_Start();
+I2C_Master_Write(0b01000000);
+I2C_Master_Write(0x09);
+I2C_Master_Write(a);
+I2C_Master_Stop();
+}

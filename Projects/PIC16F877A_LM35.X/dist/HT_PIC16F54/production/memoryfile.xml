@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/HT_PIC16F54/production\PIC16F877A_LM35.X.production.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>8192</length>
+      <used>777</used>
+      <free>7415</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>368</length>
+      <used>44</used>
+      <free>324</free>
+    </memory>
+  </executable>
+</project>
