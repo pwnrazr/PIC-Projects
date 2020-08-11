@@ -2,7 +2,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "81 lcd.c
 [v _set_lcd_e `(v ~T0 @X0 0 ef1`uc ]
 [v F844 `(v ~T0 @X0 1 tf1`ul ]
-"92 C:\Program Files\Microchip\xc8\v2.20\pic\include\pic.h
+"92 D:\Program Files\Microchip\xc8\v2.20\pic\include\pic.h
 [v __delay `JF844 ~T0 @X0 0 e ]
 [p i __delay ]
 "80 lcd.c
@@ -13,7 +13,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _set_lcd_rs `(v ~T0 @X0 0 ef1`uc ]
 "83
 [v _set_lcd_data `(v ~T0 @X0 0 ef1`uc ]
-"2689 C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877a.h
+"2689 D:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877a.h
 [v _RB5 `Vb ~T0 @X0 0 e@53 ]
 "2686
 [v _RB4 `Vb ~T0 @X0 0 e@52 ]
@@ -23,7 +23,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;xc.h: 20: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic16f877a.h: 52: extern volatile unsigned char INDF __at(0x000);
-"54 C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877a.h
+"54 D:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877a.h
 [; ;pic16f877a.h: 54: asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
 [; ;pic16f877a.h: 59: extern volatile unsigned char TMR0 __at(0x001);

@@ -58,7 +58,6 @@ void main(void)
                     lcd_putstr("Monitor OFF");
                 }
                 state = !state;
-                delay(25);
             }
         }
         lastButtonState = buttonState; 

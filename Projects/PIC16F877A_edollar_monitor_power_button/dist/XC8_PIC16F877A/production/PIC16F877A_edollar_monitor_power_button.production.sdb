@@ -3,15 +3,15 @@
 [d edition pro ]
 [d chip 16F877A ]
 [d frameptr 0 ]
-"62 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\float.c
+"62 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\float.c
 [v ___ftpack __ftpack `(f  1 e 3 0 ]
-"86 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\ftadd.c
+"86 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\ftadd.c
 [v ___ftadd __ftadd `(f  1 e 3 0 ]
-"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
+"5 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwdiv.c
 [v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
-"5 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
+"5 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\common\lwmod.c
 [v ___lwmod __lwmod `(ui  1 e 2 0 ]
-"6 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\pic\__eeprom.c
+"6 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\pic\__eeprom.c
 [v ___eecpymem __eecpymem `(v  1 e 1 0 ]
 "39
 [v ___memcpyee __memcpyee `(v  1 e 1 0 ]
@@ -41,7 +41,7 @@
 [v _main main `(v  1 e 1 0 ]
 "22 D:\OneDrive\Documents\GitHub\PIC-Projects\Projects\PIC16F877A_edollar_monitor_power_button\user.c
 [v _InitApp InitApp `(v  1 e 1 0 ]
-"166 C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877a.h
+"166 D:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877a.h
 [v _PORTA PORTA `VEuc  1 e 1 @5 ]
 "216
 [v _PORTB PORTB `VEuc  1 e 1 @6 ]

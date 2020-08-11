@@ -1,5 +1,5 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"2322 C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877a.h
+"2322 D:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877a.h
 [s S94 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
 [n S94 . RD WR WREN WRERR . EEPGD ]
 "2321
@@ -44,7 +44,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;xc.h: 20: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic16f877a.h: 52: extern volatile unsigned char INDF __at(0x000);
-"54 C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877a.h
+"54 D:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877a.h
 [; ;pic16f877a.h: 54: asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
 [; ;pic16f877a.h: 59: extern volatile unsigned char TMR0 __at(0x001);
@@ -1056,7 +1056,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;pic.h: 137: extern __bank0 unsigned char __resetbits;
 [; ;pic.h: 138: extern __bank0 __bit __powerdown;
 [; ;pic.h: 139: extern __bank0 __bit __timeout;
-"6 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\pic\__eeprom.c
+"6 D:\Program Files\Microchip\xc8\v2.20\pic\sources\c90\pic\__eeprom.c
 [v ___eecpymem `(v ~T0 @X0 1 ef3`*Vuc`*Euc`uc ]
 "7
 {

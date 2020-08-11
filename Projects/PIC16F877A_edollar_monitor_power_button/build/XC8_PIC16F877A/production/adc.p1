@@ -1,5 +1,5 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"2386 C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877a.h
+"2386 D:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877a.h
 [v _ADCS1 `Vb ~T0 @X0 0 e@255 ]
 "2383
 [v _ADCS0 `Vb ~T0 @X0 0 e@254 ]
@@ -22,10 +22,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 "2482
 [v _CHS0 `Vb ~T0 @X0 0 e@251 ]
 [v F844 `(v ~T0 @X0 1 tf1`ul ]
-"92 C:\Program Files\Microchip\xc8\v2.20\pic\include\pic.h
+"92 D:\Program Files\Microchip\xc8\v2.20\pic\include\pic.h
 [v __delay `JF844 ~T0 @X0 0 e ]
 [p i __delay ]
-"2578 C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877a.h
+"2578 D:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877a.h
 [v _GO_nDONE `Vb ~T0 @X0 0 e@250 ]
 "1152
 [v _ADRESH `Vuc ~T0 @X0 0 e@30 ]
@@ -35,7 +35,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;xc.h: 20: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
 [; ;pic16f877a.h: 52: extern volatile unsigned char INDF __at(0x000);
-"54 C:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877a.h
+"54 D:\Program Files\Microchip\xc8\v2.20\pic\include\proc\pic16f877a.h
 [; ;pic16f877a.h: 54: asm("INDF equ 00h");
 [; <" INDF equ 00h ;# ">
 [; ;pic16f877a.h: 59: extern volatile unsigned char TMR0 __at(0x001);
