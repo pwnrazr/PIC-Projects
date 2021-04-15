@@ -1,0 +1,152 @@
+[p GLOBOPT AUTOSTATIC PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877A ]
+[d frameptr 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\common\lwmod.c
+[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c90\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"23 C:\Users\Amir Azmi\Github\PIC-Projects\Projects\PIC16F877A_edollar_monitor_control.X\interrupts.c
+[v _isr isr `II(v  1 e 1 0 ]
+"100 C:\Users\Amir Azmi\Github\PIC-Projects\Projects\PIC16F877A_edollar_monitor_control.X\lcd.c
+[v _lcd_initialize lcd_initialize `(v  1 e 1 0 ]
+"136
+[v _lcd_clear lcd_clear `(v  1 e 1 0 ]
+"157
+[v _lcd_home lcd_home `(v  1 e 1 0 ]
+"178
+[v _lcd_2ndline lcd_2ndline `(v  1 e 1 0 ]
+"220
+[v _lcd_putchar lcd_putchar `(v  1 e 1 0 ]
+"241
+[v _lcd_putstr lcd_putstr `(v  1 e 1 0 ]
+"308
+[v _send_lcd_data send_lcd_data `(v  1 e 1 0 ]
+"340
+[v _set_lcd_e set_lcd_e `(v  1 e 1 0 ]
+"360
+[v _set_lcd_rs set_lcd_rs `(v  1 e 1 0 ]
+"380
+[v _set_lcd_data set_lcd_data `(v  1 e 1 0 ]
+"20 C:\Users\Amir Azmi\Github\PIC-Projects\Projects\PIC16F877A_edollar_monitor_control.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"22 C:\Users\Amir Azmi\Github\PIC-Projects\Projects\PIC16F877A_edollar_monitor_control.X\user.c
+[v _InitApp InitApp `(v  1 e 1 0 ]
+"167 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f877a.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+"217
+[v _PORTB PORTB `VEuc  1 e 1 @6 ]
+"279
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"341
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+"1326
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1376
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1438
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1500
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2687
+[v _RB4 RB4 `VEb  1 e 0 @52 ]
+"2690
+[v _RB5 RB5 `VEb  1 e 0 @53 ]
+"20 C:\Users\Amir Azmi\Github\PIC-Projects\Projects\PIC16F877A_edollar_monitor_control.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"45
+} 0
+"241 C:\Users\Amir Azmi\Github\PIC-Projects\Projects\PIC16F877A_edollar_monitor_control.X\lcd.c
+[v _lcd_putstr lcd_putstr `(v  1 e 1 0 ]
+{
+[v lcd_putstr@csz_string csz_string `*.24DCuc  1 a 1 wreg ]
+[v lcd_putstr@csz_string csz_string `*.24DCuc  1 a 1 wreg ]
+[v lcd_putstr@csz_string csz_string `*.24DCuc  1 a 1 10 ]
+"259
+} 0
+"220
+[v _lcd_putchar lcd_putchar `(v  1 e 1 0 ]
+{
+[v lcd_putchar@c_data c_data `uc  1 a 1 wreg ]
+[v lcd_putchar@c_data c_data `uc  1 a 1 wreg ]
+"223
+[v lcd_putchar@c_data c_data `uc  1 a 1 8 ]
+"224
+} 0
+"178
+[v _lcd_2ndline lcd_2ndline `(v  1 e 1 0 ]
+{
+"182
+} 0
+"100
+[v _lcd_initialize lcd_initialize `(v  1 e 1 0 ]
+{
+"119
+} 0
+"136
+[v _lcd_clear lcd_clear `(v  1 e 1 0 ]
+{
+"140
+} 0
+"157
+[v _lcd_home lcd_home `(v  1 e 1 0 ]
+{
+"161
+} 0
+"308
+[v _send_lcd_data send_lcd_data `(v  1 e 1 0 ]
+{
+[v send_lcd_data@b_rs b_rs `uc  1 a 1 wreg ]
+[v send_lcd_data@b_rs b_rs `uc  1 a 1 wreg ]
+[v send_lcd_data@uc_data uc_data `uc  1 p 1 3 ]
+"311
+[v send_lcd_data@b_rs b_rs `uc  1 a 1 6 ]
+"323
+} 0
+"360
+[v _set_lcd_rs set_lcd_rs `(v  1 e 1 0 ]
+{
+[v set_lcd_rs@b_output b_output `uc  1 a 1 wreg ]
+[v set_lcd_rs@b_output b_output `uc  1 a 1 wreg ]
+"362
+[v set_lcd_rs@b_output b_output `uc  1 a 1 2 ]
+"363
+} 0
+"340
+[v _set_lcd_e set_lcd_e `(v  1 e 1 0 ]
+{
+[v set_lcd_e@b_output b_output `uc  1 a 1 wreg ]
+[v set_lcd_e@b_output b_output `uc  1 a 1 wreg ]
+"342
+[v set_lcd_e@b_output b_output `uc  1 a 1 2 ]
+"343
+} 0
+"380
+[v _set_lcd_data set_lcd_data `(v  1 e 1 0 ]
+{
+[v set_lcd_data@uc_data uc_data `uc  1 a 1 wreg ]
+[v set_lcd_data@uc_data uc_data `uc  1 a 1 wreg ]
+"382
+[v set_lcd_data@uc_data uc_data `uc  1 a 1 2 ]
+"383
+} 0
+"22 C:\Users\Amir Azmi\Github\PIC-Projects\Projects\PIC16F877A_edollar_monitor_control.X\user.c
+[v _InitApp InitApp `(v  1 e 1 0 ]
+{
+"31
+} 0
+"23 C:\Users\Amir Azmi\Github\PIC-Projects\Projects\PIC16F877A_edollar_monitor_control.X\interrupts.c
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"50
+} 0
