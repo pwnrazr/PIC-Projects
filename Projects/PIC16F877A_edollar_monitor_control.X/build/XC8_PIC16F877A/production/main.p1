@@ -1079,77 +1079,73 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;lcd.h: 116: extern void lcd_putchar(char c_data);
 [; ;lcd.h: 133: extern void lcd_putstr(const char* csz_string);
 [; ;lcd.h: 148: void lcd_bcd(unsigned char uc_digit, unsigned int ui_number);
-[; ;adc.h: 31: extern void adc_initialize(void);
-[; ;adc.h: 49: extern void adc_on(void);
-[; ;adc.h: 66: extern void adc_off(void);
-[; ;adc.h: 82: extern unsigned int ui_adc_read(void);
 [; ;user.h: 13: void InitApp(void);
 [v $root$_main `(v ~T0 @X0 0 e ]
-"20 main.c
+"19 main.c
 [v _main `(v ~T0 @X0 1 ef ]
-"21
+"20
 {
-[; ;main.c: 20: void main(void)
-[; ;main.c: 21: {
+[; ;main.c: 19: void main(void)
+[; ;main.c: 20: {
 [e :U _main ]
 [f ]
-[; ;main.c: 23: InitApp();
-"23
+[; ;main.c: 22: InitApp();
+"22
 [e ( _InitApp ..  ]
-[; ;main.c: 25: PORTA = 0;
-"25
+[; ;main.c: 24: PORTA = 0;
+"24
 [e = _PORTA -> -> 0 `i `uc ]
-[; ;main.c: 26: PORTB = 0;
-"26
+[; ;main.c: 25: PORTB = 0;
+"25
 [e = _PORTB -> -> 0 `i `uc ]
-[; ;main.c: 27: PORTC = 0;
-"27
+[; ;main.c: 26: PORTC = 0;
+"26
 [e = _PORTC -> -> 0 `i `uc ]
-[; ;main.c: 28: PORTD = 0;
-"28
+[; ;main.c: 27: PORTD = 0;
+"27
 [e = _PORTD -> -> 0 `i `uc ]
-[; ;main.c: 30: TRISA = 0b11111111;
-"30
+[; ;main.c: 29: TRISA = 0b11111111;
+"29
 [e = _TRISA -> -> 255 `i `uc ]
-[; ;main.c: 31: TRISB = 0b00000011;
-"31
+[; ;main.c: 30: TRISB = 0b00000011;
+"30
 [e = _TRISB -> -> 3 `i `uc ]
-[; ;main.c: 32: TRISC = 0b00000000;
-"32
+[; ;main.c: 31: TRISC = 0b00000000;
+"31
 [e = _TRISC -> -> 0 `i `uc ]
-[; ;main.c: 33: TRISD = 0b00000000;
-"33
+[; ;main.c: 32: TRISD = 0b00000000;
+"32
 [e = _TRISD -> -> 0 `i `uc ]
-[; ;main.c: 35: lcd_initialize();
-"35
+[; ;main.c: 34: lcd_initialize();
+"34
 [e ( _lcd_initialize ..  ]
-[; ;main.c: 37: while(1)
-"37
+[; ;main.c: 36: while(1)
+"36
 [e :U 97 ]
-[; ;main.c: 38: {
-"38
+[; ;main.c: 37: {
+"37
 {
-[; ;main.c: 39: lcd_home();
-"39
+[; ;main.c: 38: lcd_home();
+"38
 [e ( _lcd_home ..  ]
-[; ;main.c: 40: lcd_putstr("Test line 1");
-"40
+[; ;main.c: 39: lcd_putstr("Test line 1");
+"39
 [e ( _lcd_putstr (1 :s 1C ]
-[; ;main.c: 41: lcd_2ndline();
-"41
+[; ;main.c: 40: lcd_2ndline();
+"40
 [e ( _lcd_2ndline ..  ]
-[; ;main.c: 42: lcd_putstr("Test line 2");
-"42
+[; ;main.c: 41: lcd_putstr("Test line 2");
+"41
 [e ( _lcd_putstr (1 :s 2C ]
-"43
+"42
 }
 [e :U 96 ]
-"37
+"36
 [e $U 97  ]
 [e :U 98 ]
-[; ;main.c: 43: }
-[; ;main.c: 45: }
-"45
+[; ;main.c: 42: }
+[; ;main.c: 44: }
+"44
 [e :UE 95 ]
 }
 [a 2C 84 101 115 116 32 108 105 110 101 32 50 0 ]

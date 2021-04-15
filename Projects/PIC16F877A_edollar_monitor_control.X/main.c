@@ -12,7 +12,6 @@
 #include <stdbool.h>       /* For true/false definition */
 
 #include "lcd.h"
-#include "adc.h"
 
 #include "system.h"        /* System funct/params, like osc/peripheral config */
 #include "user.h"          /* User funct/params, such as InitApp */

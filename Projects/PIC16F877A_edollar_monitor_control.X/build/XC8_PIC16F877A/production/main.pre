@@ -1815,22 +1815,10 @@ extern void lcd_putstr(const char* csz_string);
 # 148
 void lcd_bcd(unsigned char uc_digit, unsigned int ui_number);
 
-# 31 "adc.h"
-extern void adc_initialize(void);
-
-# 49
-extern void adc_on(void);
-
-# 66
-extern void adc_off(void);
-
-# 82
-extern unsigned int ui_adc_read(void);
-
 # 13 "user.h"
 void InitApp(void);
 
-# 20 "main.c"
+# 19 "main.c"
 void main(void)
 {
 

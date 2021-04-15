@@ -3,5 +3,4 @@
  main.c  \
 lcd.h  \
 user.h  \
-system.h  \
-adc.h 
+system.h 
