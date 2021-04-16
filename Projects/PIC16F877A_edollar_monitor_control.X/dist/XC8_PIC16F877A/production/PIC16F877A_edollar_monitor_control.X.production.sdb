@@ -57,6 +57,12 @@
 [v _TRISC TRISC `VEuc  1 e 1 @135 ]
 "1500
 [v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2678
+[v _RB1 RB1 `VEb  1 e 0 @49 ]
+"2681
+[v _RB2 RB2 `VEb  1 e 0 @50 ]
+"2684
+[v _RB3 RB3 `VEb  1 e 0 @51 ]
 "2687
 [v _RB4 RB4 `VEb  1 e 0 @52 ]
 "2690
@@ -64,7 +70,21 @@
 "19 C:\Users\Amir Azmi\Github\PIC-Projects\Projects\PIC16F877A_edollar_monitor_control.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
+"46
+[v main@sec_monitor_state sec_monitor_state `i  1 a 2 15 ]
+"43
+[v main@main_monitor_state main_monitor_state `i  1 a 2 13 ]
+"51
+[v main@buttonState buttonState `i  1 a 2 11 ]
+"49
+[v main@cur_sec_monitor_state cur_sec_monitor_state `i  1 a 2 9 ]
+"47
+[v main@last_sec_monitor_state last_sec_monitor_state `i  1 a 2 7 ]
 "44
+[v main@last_main_monitor_state last_main_monitor_state `i  1 a 2 5 ]
+"52
+[v main@lastbuttonState lastbuttonState `i  1 a 2 3 ]
+"106
 } 0
 "241 C:\Users\Amir Azmi\Github\PIC-Projects\Projects\PIC16F877A_edollar_monitor_control.X\lcd.c
 [v _lcd_putstr lcd_putstr `(v  1 e 1 0 ]

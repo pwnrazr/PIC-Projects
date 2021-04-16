@@ -20,12 +20,22 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TRISD `Vuc ~T0 @X0 0 e@136 ]
 "31 lcd.h
 [v _lcd_initialize `(v ~T0 @X0 0 ef ]
-"65
+"2681 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f877a.h
+[v _RB2 `Vb ~T0 @X0 0 e@50 ]
+"2684
+[v _RB3 `Vb ~T0 @X0 0 e@51 ]
+"2678
+[v _RB1 `Vb ~T0 @X0 0 e@49 ]
+"65 lcd.h
 [v _lcd_home `(v ~T0 @X0 0 ef ]
 "133
 [v _lcd_putstr `(v ~T0 @X0 0 ef1`*Cuc ]
-"82
-[v _lcd_2ndline `(v ~T0 @X0 0 ef ]
+"2687 C:\Program Files\Microchip\xc8\v2.32\pic\include\proc\pic16f877a.h
+[v _RB4 `Vb ~T0 @X0 0 e@52 ]
+[v F38 `(v ~T0 @X0 1 tf1`ul ]
+"12 C:\Program Files\Microchip\xc8\v2.32\pic\include\builtins.h
+[v __delay `JF38 ~T0 @X0 0 e ]
+[p i __delay ]
 [; ;xc.h: 18: extern const char __xc8_OPTIM_SPEED;
 [; ;xc.h: 20: extern double __fpnormalize(double);
 [; ;xc8debug.h: 14: extern void __builtin_software_breakpoint(void);
@@ -1107,9 +1117,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 29: TRISA = 0b11111111;
 "29
 [e = _TRISA -> -> 255 `i `uc ]
-[; ;main.c: 30: TRISB = 0b00000011;
+[; ;main.c: 30: TRISB = 0b00001111;
 "30
-[e = _TRISB -> -> 3 `i `uc ]
+[e = _TRISB -> -> 15 `i `uc ]
 [; ;main.c: 31: TRISC = 0b00000000;
 "31
 [e = _TRISC -> -> 0 `i `uc ]
@@ -1119,34 +1129,181 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 34: lcd_initialize();
 "34
 [e ( _lcd_initialize ..  ]
-[; ;main.c: 36: while(1)
-"36
-[e :U 97 ]
-[; ;main.c: 37: {
-"37
-{
-[; ;main.c: 38: lcd_home();
-"38
+"43
+[v _main_monitor_state `i ~T0 @X0 1 a ]
+[; ;main.c: 43: int main_monitor_state = RB2;
+[e = _main_monitor_state -> _RB2 `i ]
+"44
+[v _last_main_monitor_state `i ~T0 @X0 1 a ]
+[; ;main.c: 44: int last_main_monitor_state = RB2;
+[e = _last_main_monitor_state -> _RB2 `i ]
+"46
+[v _sec_monitor_state `i ~T0 @X0 1 a ]
+[; ;main.c: 46: int sec_monitor_state = RB3;
+[e = _sec_monitor_state -> _RB3 `i ]
+"47
+[v _last_sec_monitor_state `i ~T0 @X0 1 a ]
+[; ;main.c: 47: int last_sec_monitor_state = RB3;
+[e = _last_sec_monitor_state -> _RB3 `i ]
+"49
+[v _cur_sec_monitor_state `i ~T0 @X0 1 a ]
+[; ;main.c: 49: int cur_sec_monitor_state = RB3;
+[e = _cur_sec_monitor_state -> _RB3 `i ]
+"51
+[v _buttonState `i ~T0 @X0 1 a ]
+[; ;main.c: 51: int buttonState = RB1;
+[e = _buttonState -> _RB1 `i ]
+"52
+[v _lastbuttonState `i ~T0 @X0 1 a ]
+[; ;main.c: 52: int lastbuttonState = RB1;
+[e = _lastbuttonState -> _RB1 `i ]
+[; ;main.c: 54: lcd_home();
+"54
 [e ( _lcd_home ..  ]
-[; ;main.c: 39: lcd_putstr("Test line 1");
-"39
+[; ;main.c: 55: lcd_putstr("boot");
+"55
 [e ( _lcd_putstr (1 :s 1C ]
-[; ;main.c: 40: lcd_2ndline();
-"40
-[e ( _lcd_2ndline ..  ]
-[; ;main.c: 41: lcd_putstr("Test line 2");
-"41
-[e ( _lcd_putstr (1 :s 2C ]
-"42
+[; ;main.c: 57: while(1)
+"57
+[e :U 97 ]
+[; ;main.c: 58: {
+"58
+{
+[; ;main.c: 62: buttonState = RB1;
+"62
+[e = _buttonState -> _RB1 `i ]
+[; ;main.c: 63: if(buttonState != lastbuttonState)
+"63
+[e $ ! != _buttonState _lastbuttonState 99  ]
+[; ;main.c: 64: {
+"64
+{
+[; ;main.c: 65: if(buttonState == 0)
+"65
+[e $ ! == _buttonState -> 0 `i 100  ]
+[; ;main.c: 66: {
+"66
+{
+[; ;main.c: 67: RB4 = 1;
+"67
+[e = _RB4 -> -> 1 `i `b ]
+[; ;main.c: 68: _delay((unsigned long)((250)*(20000000/4000.0)));
+"68
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main.c: 69: RB4 = 0;
+"69
+[e = _RB4 -> -> 0 `i `b ]
+"70
+}
+[e :U 100 ]
+"71
+}
+[e :U 99 ]
+[; ;main.c: 70: }
+[; ;main.c: 71: }
+[; ;main.c: 74: sec_monitor_state = RB3;
+"74
+[e = _sec_monitor_state -> _RB3 `i ]
+[; ;main.c: 75: if(sec_monitor_state != last_sec_monitor_state)
+"75
+[e $ ! != _sec_monitor_state _last_sec_monitor_state 101  ]
+[; ;main.c: 76: {
+"76
+{
+[; ;main.c: 77: cur_sec_monitor_state = sec_monitor_state;
+"77
+[e = _cur_sec_monitor_state _sec_monitor_state ]
+"78
+}
+[e :U 101 ]
+[; ;main.c: 78: }
+[; ;main.c: 79: last_sec_monitor_state = sec_monitor_state;
+"79
+[e = _last_sec_monitor_state _sec_monitor_state ]
+[; ;main.c: 82: main_monitor_state = RB2;
+"82
+[e = _main_monitor_state -> _RB2 `i ]
+[; ;main.c: 83: if(main_monitor_state != last_main_monitor_state)
+"83
+[e $ ! != _main_monitor_state _last_main_monitor_state 102  ]
+[; ;main.c: 84: {
+"84
+{
+[; ;main.c: 85: if(main_monitor_state == 1)
+"85
+[e $ ! == _main_monitor_state -> 1 `i 103  ]
+[; ;main.c: 86: {
+"86
+{
+[; ;main.c: 87: if(cur_sec_monitor_state == 0)
+"87
+[e $ ! == _cur_sec_monitor_state -> 0 `i 104  ]
+[; ;main.c: 88: {
+"88
+{
+[; ;main.c: 89: RB4 = 1;
+"89
+[e = _RB4 -> -> 1 `i `b ]
+[; ;main.c: 90: _delay((unsigned long)((250)*(20000000/4000.0)));
+"90
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main.c: 91: RB4 = 0;
+"91
+[e = _RB4 -> -> 0 `i `b ]
+"92
+}
+[e :U 104 ]
+"93
+}
+[; ;main.c: 92: }
+[; ;main.c: 93: }
+[e $U 105  ]
+"94
+[e :U 103 ]
+[; ;main.c: 94: else
+[; ;main.c: 95: {
+"95
+{
+[; ;main.c: 96: if(cur_sec_monitor_state == 1)
+"96
+[e $ ! == _cur_sec_monitor_state -> 1 `i 106  ]
+[; ;main.c: 97: {
+"97
+{
+[; ;main.c: 98: RB4 = 1;
+"98
+[e = _RB4 -> -> 1 `i `b ]
+[; ;main.c: 99: _delay((unsigned long)((250)*(20000000/4000.0)));
+"99
+[e ( __delay (1 -> * -> -> 250 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;main.c: 100: RB4 = 0;
+"100
+[e = _RB4 -> -> 0 `i `b ]
+"101
+}
+[e :U 106 ]
+"102
+}
+[e :U 105 ]
+"103
+}
+[e :U 102 ]
+[; ;main.c: 101: }
+[; ;main.c: 102: }
+[; ;main.c: 103: }
+[; ;main.c: 104: last_main_monitor_state = main_monitor_state;
+"104
+[e = _last_main_monitor_state _main_monitor_state ]
+"105
 }
 [e :U 96 ]
-"36
+"57
 [e $U 97  ]
 [e :U 98 ]
-[; ;main.c: 42: }
-[; ;main.c: 44: }
-"44
+[; ;main.c: 105: }
+[; ;main.c: 106: }
+"106
 [e :UE 95 ]
 }
-[a 2C 84 101 115 116 32 108 105 110 101 32 50 0 ]
-[a 1C 84 101 115 116 32 108 105 110 101 32 49 0 ]
+[a 1C 98 111 111 116 0 ]
+
